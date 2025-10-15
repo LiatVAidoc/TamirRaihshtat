@@ -15,7 +15,7 @@ jest.mock('dicom-parser', () => ({
   parseDicom: mockParseDicom
 }), { virtual: true });
 
-import { downloadDicomFile, parseDicomFile } from '../dicom-downloader.js';
+import { downloadDicomFile, parseDicomFile } from '../controller/utils/dicom-downloader.js';
 
 describe('DICOM Downloader', () => {
   beforeEach(() => {
